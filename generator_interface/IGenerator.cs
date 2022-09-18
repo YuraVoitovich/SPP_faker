@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace generator_interface
 {
-    public interface IGenerator
+    public interface IGenerator<T>
     {
         Type GetGeneratorType();
 
-        void RegisterGenerator(IGenerator generator);
-        T Generate<T>();
+        void RegisterGenerator(IGenerator<T> generator);
+        T Generate();
     }
 }
