@@ -12,7 +12,6 @@ namespace generator_interface
     {
         Type GetGeneratorType();
 
-        void RegisterGenerator(IGenerator<T> generator);
         T Generate();
     }
 }
