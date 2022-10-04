@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SPP_faker
 {
+    [AttributeUsage(AttributeTargets.Class, AllowMultiple = false)]
     public class DTOAttribute : Attribute
     {
         

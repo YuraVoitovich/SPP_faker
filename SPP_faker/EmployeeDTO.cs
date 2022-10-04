@@ -10,7 +10,7 @@ namespace SPP_faker
     public class EmployeeDTO
     {
         [DTOConstructor]
-        public EmployeeDTO(String str)
+        public EmployeeDTO(EmployeeDTO DTO)
         {
 
         }
