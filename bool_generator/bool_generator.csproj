@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{256F167C-AEC5-42ED-9E7F-AFC72AFBBB6E}</ProjectGuid>
+    <ProjectGuid>{AF6658F4-941F-491E-805F-6A7D4CAA49ED}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>generator_interface</RootNamespace>
-    <AssemblyName>generator_interface</AssemblyName>
+    <RootNamespace>bool_generator</RootNamespace>
+    <AssemblyName>bool_generator</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,9 +41,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="exception\GeneratorException.cs" />
-    <Compile Include="IGenerator.cs" />
+    <Compile Include="BoolGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\generator_interface\generator_interface.csproj">
+      <Project>{256f167c-aec5-42ed-9e7f-afc72afbbb6e}</Project>
+      <Name>generator_interface</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

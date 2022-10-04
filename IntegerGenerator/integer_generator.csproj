@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IntegerGenerator.cs" />
+    <Compile Include="ByteGenerator.cs" />
+    <Compile Include="IntGenerator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShortGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\generator_interface\generator_interface.csproj">

@@ -4,20 +4,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System;
-namespace IntegerGenerator
+
+namespace char_generator
 {
-    public class IntegerGenerator<T> : IGenerator<T>
+    public class CharGenerator : IGenerator
     {
-        public T Generate()
+        private Random random = new Random();
+        public object Generate()
         {
-            throw new NotImplementedException();
-           
+            return (char)random.Next(-1, 256);
         }
 
         public Type GetGeneratorType()
         {
-            throw new NotImplementedException();
+            return typeof(char);
         }
     }
 }
